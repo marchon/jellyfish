@@ -336,6 +336,8 @@ def match_rating_codex(s):
 
 
 def match_rating_comparison(s1, s2):
+    _check_type(s1)
+    _check_type(s2)
     codex1 = match_rating_codex(s1)
     codex2 = match_rating_codex(s2)
     len1 = len(codex1)
